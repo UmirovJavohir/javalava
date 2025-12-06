@@ -1,29 +1,40 @@
-# class fruits:
-#     def __init__(self,title,price,quality):
-#         self.name=title
-#         self.narxi=price
-#         self.soni=quality
+# =================================================== 1
 #
-# lol=fruits("olma",15000,10)
-# print(lol.__dict__)
+# class person:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#
+#     def get_info(self):
+#         return f"your name {self.name} and you are {self.age} years old"
+#
+#     @classmethod
+#     def from_birth_year(cls,name,birth_year):
+#         year=2025-birth_year
+#         return cls(name,year)
+#
+# information=person(name="Javohir",age=19)
+# print(information.get_info())
+# answer=person.from_birth_year("dilshod",2006)
+# print(answer.get_info())
 
-class fruits:
-    def __init__(self,title,price,quality):
-        self.name=title
-        self.narxi=price
-        self.soni=quality
-
-    def fruits1(self):
-        return {
-            "name":self.name,
-            "narxi":self.narxi,
-            "soni":self.soni
-        }
-    def lol(self,title_1,price_1):
-        self.name=title_1
-        self.narxi=price_1
-
-olma=fruits("olma",13000,10)
-print(olma.fruits1())
-olma.lol("banan",20000)
-print(olma.fruits1())
+# --------------------------------------------------- 2
+#
+# class student:
+#     def __init__(self,fullname,grade):
+#         self.name=fullname
+#         self.grade=grade
+#
+#     def get_info(self):
+#         return f"your name is {self.name}, you got {self.grade} grade"
+#
+#     @staticmethod
+#     def qwerty(grade):
+#         return grade>=1 and grade<=11
+#
+#     @classmethod
+#     def create(cls,fullname,grade):
+#         return cls(fullname,grade)
+#
+# s=student.create("Azizbek",9)
+# print(s.get_info())
